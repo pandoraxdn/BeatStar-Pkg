@@ -1,10 +1,10 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Cryptography\Algorithms\Rsa;
+namespace beatstar\pkg\Jwt\Cryptography\Algorithms\Rsa;
 
-use BeatStar\Pkg\Jwt\Cryptography\Keys\RsaPrivateKey;
-use BeatStar\Pkg\Jwt\Cryptography\Signer;
-use BeatStar\Pkg\Jwt\Exceptions\SigningException;
+use beatstar\pkg\Jwt\Cryptography\Keys\RsaPrivateKey;
+use beatstar\pkg\Jwt\Cryptography\Signer;
+use beatstar\pkg\Jwt\Exceptions\SigningException;
 
 abstract class AbstractRsaSigner implements Signer
 {

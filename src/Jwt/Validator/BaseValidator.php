@@ -1,8 +1,8 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Validator;
+namespace beatstar\pkg\Jwt\Validator;
 
-use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
+use beatstar\pkg\Jwt\Exceptions\ValidationException;
 
 class BaseValidator implements Validator
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace BeatStar\Pkg;
+namespace beatstar\pkg;
 
-use BeatStar\Pkg\Jwt\Base64\SafeBase64Parser;
-use BeatStar\Pkg\Jwt\Base64\Base64Parser;
-use BeatStar\Pkg\Jwt\Cryptography\Verifier;
-use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
-use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
-use BeatStar\Pkg\Jwt\Exceptions\InvalidTokenException;
-use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
-use BeatStar\Pkg\Jwt\Json\StrictJsonParser;
-use BeatStar\Pkg\Jwt\Json\JsonParser;
-use BeatStar\Pkg\Jwt\Validator\DefaultValidator;
-use BeatStar\Pkg\Jwt\Validator\Validator;
+use beatstar\pkg\Jwt\Base64\SafeBase64Parser;
+use beatstar\pkg\Jwt\Base64\Base64Parser;
+use beatstar\pkg\Jwt\Cryptography\Verifier;
+use beatstar\pkg\Jwt\Exceptions\JsonDecodingException;
+use beatstar\pkg\Jwt\Exceptions\InvalidSignatureException;
+use beatstar\pkg\Jwt\Exceptions\InvalidTokenException;
+use beatstar\pkg\Jwt\Exceptions\ValidationException;
+use beatstar\pkg\Jwt\Json\StrictJsonParser;
+use beatstar\pkg\Jwt\Json\JsonParser;
+use beatstar\pkg\Jwt\Validator\DefaultValidator;
+use beatstar\pkg\Jwt\Validator\Validator;
 
 class ParserPkg
 {

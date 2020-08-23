@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatStar\Pkg;
+namespace beatstar\pkg;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -10,25 +10,25 @@ use Illuminate\Contracts\Http\Kernel;
 
 use Illuminate\Routing\Router;
 
-use BeatStar\Pkg\Console\Hello;
+use beatstar\pkg\Console\Hello;
 
-use BeatStar\Pkg\Console\InstallPkg;
+use beatstar\pkg\Console\InstallPkg;
 
-use BeatStar\Pkg\Console\MakeController;
+use beatstar\pkg\Console\MakeController;
 
-use BeatStar\Pkg\Console\MakeControllerAjax;
+use beatstar\pkg\Console\MakeControllerAjax;
 
-use BeatStar\Pkg\Console\WriteExample;
+use beatstar\pkg\Console\WriteExample;
 
-use BeatStar\Pkg\Console\WriteRoutes;
+use beatstar\pkg\Console\WriteRoutes;
 
-use BeatStar\Pkg\Console\WriteRoutesJwt;
+use beatstar\pkg\Console\WriteRoutesJwt;
 
-use BeatStar\Pkg\Console\WriteKey;
+use beatstar\pkg\Console\WriteKey;
 
-use BeatStar\Pkg\Http\Middleware\Hash;
+use beatstar\pkg\Http\Middleware\Hash;
 
-use BeatStar\Pkg\Http\Middleware\Token;
+use beatstar\pkg\Http\Middleware\Token;
 
 class NeoServiceProvider extends ServiceProvider
 {
@@ -58,7 +58,7 @@ class NeoServiceProvider extends ServiceProvider
 		
 		$loader = AliasLoader::getInstance();
 
-		$loader->alias('FunctionPkg','BeatStar\Pkg\Fecades\FunctionPkg');
+		$loader->alias('FunctionPkg','beatstar\pkg\Fecades\FunctionPkg');
 
 		$this->app->bind('FunctionPkg', function(){
 

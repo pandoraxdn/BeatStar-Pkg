@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Redirect;
 
-use BeatStar\Pkg\Fecades\FunctionPkg;
+use beatstar\pkg\Fecades\FunctionPkg;
 
 class ValidateController extends Controller
 {

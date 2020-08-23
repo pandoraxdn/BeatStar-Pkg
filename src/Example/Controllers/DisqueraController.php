@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 use Illuminate\Support\Facades\Redirect;
 
-use BeatStar\Pkg\Fecades\FunctionPkg;
+use beatstar\pkg\Fecades\FunctionPkg;
 
 use App\Disquera;
 

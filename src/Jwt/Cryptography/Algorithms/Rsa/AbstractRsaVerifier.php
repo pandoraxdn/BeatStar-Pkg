@@ -1,10 +1,10 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Cryptography\Algorithms\Rsa;
+namespace beatstar\pkg\Jwt\Cryptography\Algorithms\Rsa;
 
-use BeatStar\Pkg\Jwt\Cryptography\Keys\RsaPublicKey;
-use BeatStar\Pkg\Jwt\Cryptography\Verifier;
-use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
+use beatstar\pkg\Jwt\Cryptography\Keys\RsaPublicKey;
+use beatstar\pkg\Jwt\Cryptography\Verifier;
+use beatstar\pkg\Jwt\Exceptions\InvalidSignatureException;
 
 abstract class AbstractRsaVerifier implements Verifier
 {

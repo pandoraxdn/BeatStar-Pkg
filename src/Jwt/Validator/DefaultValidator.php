@@ -1,10 +1,10 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Validator;
+namespace beatstar\pkg\Jwt\Validator;
 
-use BeatStar\Pkg\Jwt\Enums\PublicClaimNames;
-use BeatStar\Pkg\Jwt\Validator\Rules\NewerThan;
-use BeatStar\Pkg\Jwt\Validator\Rules\OlderThanOrSame;
+use beatstar\pkg\Jwt\Enums\PublicClaimNames;
+use beatstar\pkg\Jwt\Validator\Rules\NewerThan;
+use beatstar\pkg\Jwt\Validator\Rules\OlderThanOrSame;
 
 class DefaultValidator extends BaseValidator
 {

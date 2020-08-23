@@ -1,26 +1,26 @@
 <?php
 
-namespace BeatStar\Pkg;
+namespace beatstar\pkg;
 
-use BeatStar\Pkg\Jwt\Cryptography\Algorithms\Hmac\HS384;
+use beatstar\pkg\Jwt\Cryptography\Algorithms\Hmac\HS384;
 
-use BeatStar\Pkg\Jwt\Exceptions\InvalidKeyException;
+use beatstar\pkg\Jwt\Exceptions\InvalidKeyException;
 
-use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
+use beatstar\pkg\Jwt\Exceptions\InvalidSignatureException;
 
-use BeatStar\Pkg\Jwt\Exceptions\InvalidTokenException;
+use beatstar\pkg\Jwt\Exceptions\InvalidTokenException;
 
-use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
+use beatstar\pkg\Jwt\Exceptions\JsonDecodingException;
 
-use BeatStar\Pkg\Jwt\Exceptions\JsonEncodingException;
+use beatstar\pkg\Jwt\Exceptions\JsonEncodingException;
 
-use BeatStar\Pkg\Jwt\Exceptions\SigningException;
+use beatstar\pkg\Jwt\Exceptions\SigningException;
 
-use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
+use beatstar\pkg\Jwt\Exceptions\ValidationException;
 
-use BeatStar\Pkg\GeneratorPkg;
+use beatstar\pkg\GeneratorPkg;
 
-use BeatStar\Pkg\ParserPkg;
+use beatstar\pkg\ParserPkg;
 
 use DateTime;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Json;
+namespace beatstar\pkg\Jwt\Json;
 
-use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
-use BeatStar\Pkg\Jwt\Exceptions\JsonEncodingException;
+use beatstar\pkg\Jwt\Exceptions\JsonDecodingException;
+use beatstar\pkg\Jwt\Exceptions\JsonEncodingException;
 
 interface JsonParser
 {

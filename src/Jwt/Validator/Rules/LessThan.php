@@ -1,9 +1,9 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Validator\Rules;
+namespace beatstar\pkg\Jwt\Validator\Rules;
 
-use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
-use BeatStar\Pkg\Jwt\Validator\Rule;
+use beatstar\pkg\Jwt\Exceptions\ValidationException;
+use beatstar\pkg\Jwt\Validator\Rule;
 
 class LessThan implements Rule
 {

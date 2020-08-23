@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Cryptography\Algorithms\Rsa;
+namespace beatstar\pkg\Jwt\Cryptography\Algorithms\Rsa;
 
 class RS256Verifier extends AbstractRsaVerifier
 {

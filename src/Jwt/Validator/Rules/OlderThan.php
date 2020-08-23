@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Validator\Rules;
+namespace beatstar\pkg\Jwt\Validator\Rules;
 
 class OlderThan extends LessThan
 {

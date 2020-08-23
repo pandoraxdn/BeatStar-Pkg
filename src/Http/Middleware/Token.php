@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Session;
 
 use Illuminate\Support\Facades\Auth;
 
-use BeatStar\Pkg\Fecades\FunctionPkg;
+use beatstar\pkg\Fecades\FunctionPkg;
 
 class Hash
 {

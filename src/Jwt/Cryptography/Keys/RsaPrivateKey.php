@@ -1,8 +1,8 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Cryptography\Keys;
+namespace beatstar\pkg\Jwt\Cryptography\Keys;
 
-use BeatStar\Pkg\Jwt\Exceptions\InvalidKeyException;
+use beatstar\pkg\Jwt\Exceptions\InvalidKeyException;
 
 class RsaPrivateKey
 {

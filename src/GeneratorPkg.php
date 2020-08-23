@@ -1,12 +1,12 @@
 <?php
 
-namespace BeatStar\Pkg;
+namespace beatstar\pkg;
 
-use BeatStar\Pkg\Jwt\Base64\SafeBase64Parser;
-use BeatStar\Pkg\Jwt\Base64\Base64Parser;
-use BeatStar\Pkg\Jwt\Cryptography\Signer;
-use BeatStar\Pkg\Jwt\Json\StrictJsonParser;
-use BeatStar\Pkg\Jwt\Json\JsonParser;
+use beatstar\pkg\Jwt\Base64\SafeBase64Parser;
+use beatstar\pkg\Jwt\Base64\Base64Parser;
+use beatstar\pkg\Jwt\Cryptography\Signer;
+use beatstar\pkg\Jwt\Json\StrictJsonParser;
+use beatstar\pkg\Jwt\Json\JsonParser;
 
 class GeneratorPkg
 {

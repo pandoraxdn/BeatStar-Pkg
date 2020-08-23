@@ -1,12 +1,12 @@
 <?php
 
-namespace BeatStar\Pkg\Jwt\Cryptography\Algorithms\Hmac;
+namespace beatstar\pkg\Jwt\Cryptography\Algorithms\Hmac;
 
-use BeatStar\Pkg\Jwt\Cryptography\Signer;
-use BeatStar\Pkg\Jwt\Cryptography\Verifier;
-use BeatStar\Pkg\Jwt\Exceptions\InvalidKeyException;
-use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
-use BeatStar\Pkg\Jwt\Exceptions\SigningException;
+use beatstar\pkg\Jwt\Cryptography\Signer;
+use beatstar\pkg\Jwt\Cryptography\Verifier;
+use beatstar\pkg\Jwt\Exceptions\InvalidKeyException;
+use beatstar\pkg\Jwt\Exceptions\InvalidSignatureException;
+use beatstar\pkg\Jwt\Exceptions\SigningException;
 
 abstract class AbstractHmac implements Signer, Verifier
 {

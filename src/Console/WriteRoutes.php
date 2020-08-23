@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatStar\Pkg\Console;
+namespace beatstar\pkg\Console;
 
 use Illuminate\Console\Command;
 

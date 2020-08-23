@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatStar\Pkg\Fecades;
+namespace beatstar\pkg\Fecades;
 
 use Illuminate\Support\Facades\Facade;
 
