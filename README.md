@@ -27,6 +27,17 @@
 	It is recommended that you backup routes if they exist.
 </p>
 <p>
+	<strong>php artisan pkg:route-jwt</strong>
+	<br>
+	Writing routes of pkg in your project.
+	<br>
+	Note the current routes will be overwritten from the /routes/web.php file.
+	<br>
+	It is recommended that you backup routes if they exist.
+	<br>
+	This command adds a JWT token validation to the laravel sessions.
+</p>
+<p>
 	<strong>php artisan pkg:example</strong>
 	<br>
 	Displays sample files from the use of pkg.
