@@ -1,0 +1,40 @@
+{
+    "name": "neo/pkg",
+    "description": "New PKG",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RodrigoXdn",
+            "email": "al221711698@gmail.com"
+        },
+        {
+            "name": "Sebastián",
+            "email": "al221810693@gmail.com"
+        },
+        {
+            "name": "Brian",
+            "email": "al221711721@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neo\\Pkg\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neo\\Pkg\\NeoServiceProvider"
+            ],
+            "aliases": {
+                "FunctionPkg":  "Neo\\Pkg\\Facades\\FunctionPkg"
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\DB;
+
+use Illuminate\Support\Facades\View;
+
+use Illuminate\Support\Facades\Redirect;
+
+use Neo\Pkg\Fecades\FunctionPkg;
+
+class MyNameController extends Controller
+{
+    
+    public function index($date)
+    {   
+        // Your code
+
+        return View::make('');
+
+        //return view("");
+    }
+
+    public function store(Request $request, $date)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+    public function show(Request $request, $date)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+    public function edit(Request $request, $date, $id)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+    public function update(Request $request, $date)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+    public function delete(Request $request,$date)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+    public function active(Request $request,$date)
+    {
+        if ($request->ajax()) {
+
+            // Your code
+
+            $data['success'] = "";
+
+            return response()->json($data);
+
+        }
+    }
+
+}
