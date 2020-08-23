@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Base64;
+namespace BeatStar\Pkg\Jwt\Base64;
 
 interface Base64Parser
 {

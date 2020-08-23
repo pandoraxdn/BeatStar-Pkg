@@ -1,12 +1,12 @@
 <?php
 
-namespace Neo\Pkg;
+namespace BeatStar\Pkg;
 
-use Neo\Pkg\Jwt\Base64\SafeBase64Parser;
-use Neo\Pkg\Jwt\Base64\Base64Parser;
-use Neo\Pkg\Jwt\Cryptography\Signer;
-use Neo\Pkg\Jwt\Json\StrictJsonParser;
-use Neo\Pkg\Jwt\Json\JsonParser;
+use BeatStar\Pkg\Jwt\Base64\SafeBase64Parser;
+use BeatStar\Pkg\Jwt\Base64\Base64Parser;
+use BeatStar\Pkg\Jwt\Cryptography\Signer;
+use BeatStar\Pkg\Jwt\Json\StrictJsonParser;
+use BeatStar\Pkg\Jwt\Json\JsonParser;
 
 class GeneratorPkg
 {

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\View;
 
 use Illuminate\Support\Facades\Redirect;
 
-use Neo\Pkg\Fecades\FunctionPkg;
+use BeatStar\Pkg\Fecades\FunctionPkg;
 
 use App\Artista;
 

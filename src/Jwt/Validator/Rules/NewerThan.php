@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Validator\Rules;
+namespace BeatStar\Pkg\Jwt\Validator\Rules;
 
 class NewerThan extends GreaterThan
 {

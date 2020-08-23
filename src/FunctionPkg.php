@@ -1,26 +1,26 @@
 <?php
 
-namespace Neo\Pkg;
+namespace BeatStar\Pkg;
 
-use Neo\Pkg\Jwt\Cryptography\Algorithms\Hmac\HS384;
+use BeatStar\Pkg\Jwt\Cryptography\Algorithms\Hmac\HS384;
 
-use Neo\Pkg\Jwt\Exceptions\InvalidKeyException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidKeyException;
 
-use Neo\Pkg\Jwt\Exceptions\InvalidSignatureException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
 
-use Neo\Pkg\Jwt\Exceptions\InvalidTokenException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidTokenException;
 
-use Neo\Pkg\Jwt\Exceptions\JsonDecodingException;
+use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
 
-use Neo\Pkg\Jwt\Exceptions\JsonEncodingException;
+use BeatStar\Pkg\Jwt\Exceptions\JsonEncodingException;
 
-use Neo\Pkg\Jwt\Exceptions\SigningException;
+use BeatStar\Pkg\Jwt\Exceptions\SigningException;
 
-use Neo\Pkg\Jwt\Exceptions\ValidationException;
+use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
 
-use Neo\Pkg\GeneratorPkg;
+use BeatStar\Pkg\GeneratorPkg;
 
-use Neo\Pkg\ParserPkg;
+use BeatStar\Pkg\ParserPkg;
 
 use DateTime;
 

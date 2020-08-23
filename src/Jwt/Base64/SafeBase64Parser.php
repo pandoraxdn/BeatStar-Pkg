@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Base64;
+namespace BeatStar\Pkg\Jwt\Base64;
 
 class SafeBase64Parser implements Base64Parser
 {

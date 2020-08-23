@@ -1,8 +1,8 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Cryptography;
+namespace BeatStar\Pkg\Jwt\Cryptography;
 
-use Neo\Pkg\Jwt\Exceptions\SigningException;
+use BeatStar\Pkg\Jwt\Exceptions\SigningException;
 
 interface Signer
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Enums;
+namespace BeatStar\Pkg\Jwt\Enums;
 
 class PublicClaimNames
 {

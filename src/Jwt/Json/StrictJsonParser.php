@@ -1,9 +1,9 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Json;
+namespace BeatStar\Pkg\Jwt\Json;
 
-use Neo\Pkg\Jwt\Exceptions\JsonDecodingException;
-use Neo\Pkg\Jwt\Exceptions\JsonEncodingException;
+use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
+use BeatStar\Pkg\Jwt\Exceptions\JsonEncodingException;
 
 class StrictJsonParser implements JsonParser
 {

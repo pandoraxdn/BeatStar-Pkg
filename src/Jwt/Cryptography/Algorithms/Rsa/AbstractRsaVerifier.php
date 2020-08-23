@@ -1,10 +1,10 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Cryptography\Algorithms\Rsa;
+namespace BeatStar\Pkg\Jwt\Cryptography\Algorithms\Rsa;
 
-use Neo\Pkg\Jwt\Cryptography\Keys\RsaPublicKey;
-use Neo\Pkg\Jwt\Cryptography\Verifier;
-use Neo\Pkg\Jwt\Exceptions\InvalidSignatureException;
+use BeatStar\Pkg\Jwt\Cryptography\Keys\RsaPublicKey;
+use BeatStar\Pkg\Jwt\Cryptography\Verifier;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
 
 abstract class AbstractRsaVerifier implements Verifier
 {

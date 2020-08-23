@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Console;
+namespace BeatStar\Pkg\Console;
 
 use Illuminate\Console\Command;
 

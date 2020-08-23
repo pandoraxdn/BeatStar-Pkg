@@ -1,8 +1,8 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Validator;
+namespace BeatStar\Pkg\Jwt\Validator;
 
-use Neo\Pkg\Jwt\Exceptions\ValidationException;
+use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
 
 interface Validator
 {

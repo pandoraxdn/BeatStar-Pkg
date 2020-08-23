@@ -1,5 +1,5 @@
 {
-    "name": "neo/pkg",
+    "name": "BeatStar/pkg",
     "description": "New PKG",
     "type": "library",
     "license": "MIT",
@@ -24,16 +24,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Neo\\Pkg\\": "src/"
+            "BeatStar\\Pkg\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Neo\\Pkg\\NeoServiceProvider"
+                "BeatStar\\Pkg\\NeoServiceProvider"
             ],
             "aliases": {
-                "FunctionPkg":  "Neo\\Pkg\\Facades\\FunctionPkg"
+                "FunctionPkg":  "BeatStar\\Pkg\\Facades\\FunctionPkg"
             }
         }
     }

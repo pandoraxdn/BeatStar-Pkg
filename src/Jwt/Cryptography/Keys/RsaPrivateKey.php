@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Pkg\Jwt\Cryptography\Keys;
+namespace BeatStar\Pkg\Jwt\Cryptography\Keys;
 
-use Laravel\Pkg\Jwt\Exceptions\InvalidKeyException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidKeyException;
 
 class RsaPrivateKey
 {

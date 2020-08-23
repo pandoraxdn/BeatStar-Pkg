@@ -1,18 +1,18 @@
 <?php
 
-namespace Neo\Pkg;
+namespace BeatStar\Pkg;
 
-use Neo\Pkg\Jwt\Base64\SafeBase64Parser;
-use Neo\Pkg\Jwt\Base64\Base64Parser;
-use Neo\Pkg\Jwt\Cryptography\Verifier;
-use Neo\Pkg\Jwt\Exceptions\JsonDecodingException;
-use Neo\Pkg\Jwt\Exceptions\InvalidSignatureException;
-use Neo\Pkg\Jwt\Exceptions\InvalidTokenException;
-use Neo\Pkg\Jwt\Exceptions\ValidationException;
-use Neo\Pkg\Jwt\Json\StrictJsonParser;
-use Neo\Pkg\Jwt\Json\JsonParser;
-use Neo\Pkg\Jwt\Validator\DefaultValidator;
-use Neo\Pkg\Jwt\Validator\Validator;
+use BeatStar\Pkg\Jwt\Base64\SafeBase64Parser;
+use BeatStar\Pkg\Jwt\Base64\Base64Parser;
+use BeatStar\Pkg\Jwt\Cryptography\Verifier;
+use BeatStar\Pkg\Jwt\Exceptions\JsonDecodingException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidSignatureException;
+use BeatStar\Pkg\Jwt\Exceptions\InvalidTokenException;
+use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
+use BeatStar\Pkg\Jwt\Json\StrictJsonParser;
+use BeatStar\Pkg\Jwt\Json\JsonParser;
+use BeatStar\Pkg\Jwt\Validator\DefaultValidator;
+use BeatStar\Pkg\Jwt\Validator\Validator;
 
 class ParserPkg
 {

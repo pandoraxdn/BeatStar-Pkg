@@ -1,9 +1,9 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Validator\Rules;
+namespace BeatStar\Pkg\Jwt\Validator\Rules;
 
-use Neo\Pkg\Jwt\Exceptions\ValidationException;
-use Neo\Pkg\Jwt\Validator\Rule;
+use BeatStar\Pkg\Jwt\Exceptions\ValidationException;
+use BeatStar\Pkg\Jwt\Validator\Rule;
 
 class LessThanOrEqualTo implements Rule
 {

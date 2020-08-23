@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Jwt\Exceptions;
+namespace BeatStar\Pkg\Jwt\Exceptions;
 
 use Exception;
 
