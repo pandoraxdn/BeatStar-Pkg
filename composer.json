@@ -30,7 +30,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "beatstar\\pkg\\NeoServiceProvider"
+                "beatstar\\pkg\\HashServiceProvider",
+                "beatstar\\pkg\\TokenServiceProvider"
             ],
             "aliases": {
                 "FunctionPkg":  "beatStar\\pkg\\Facades\\FunctionPkg"
