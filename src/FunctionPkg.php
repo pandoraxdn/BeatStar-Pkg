@@ -142,6 +142,51 @@ class FunctionPkg
         }
     }
 
+    public function encrypt_aes(string $value)
+    {
+
+        $ciphering = "AES-256-CBC"; 
+
+        $iv_length = openssl_cipher_iv_length($ciphering);
+
+        $options = 0;
+
+        $encryption_iv = '8AC7230489E80000';
+
+        $encryption_key = config("neo-pkg.secret");
+
+        $encryption = openssl_encrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
+
+        return $encryption;
+
+    }
+
+    public function decrypt_aes(string $value)
+    {
+
+        try {
+
+            $ciphering = "AES-256-CBC";  
+
+            $iv_length = openssl_cipher_iv_length($ciphering);
+
+            $options = 0;
+
+            $encryption_iv = '8AC7230489E80000';
+
+            $encryption_key = config("neo-pkg.secret");
+
+            $decryption = openssl_decrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
+            
+        } catch (Exception $e) {
+
+            $decryption = null;
+        }
+
+        return $decryption;
+
+    }
+
     public function generate_token(array $claims = []): string
     {
         $signer = new HS384(config("neo-pkg.secret"));
