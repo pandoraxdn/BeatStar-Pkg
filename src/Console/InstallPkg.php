@@ -10,14 +10,14 @@ class InstallPkg extends Command
 {
 	protected $signature = 'pkg:install';
 
-	protected $description = 'Install Neo Pkg Package.';
+	protected $description = 'Install Beatstar Pkg Package.';
 
 	public function handle()
 	{
 		$this->info('Installing Neo-Pkg Package...');
 
         $this->call('vendor:publish', [
-            '--provider' => "Neo\Pkg\NeoServiceProvider"
+            '--provider' => "beatstar\pkg\NeoServiceProvider"
         ]);
 
         $this->config();
