@@ -22,7 +22,7 @@ class Token
     	
     	if (Auth::check() || Session::get('encuestado')) {
 
-    		$token =  Session::get('token');
+    		$token =  FunctionPkg::parse_token(Session::get('token'));
 
     		if ($token != null) {
 
