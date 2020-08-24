@@ -31,15 +31,15 @@ class InstallPkg extends Command
 
 	public function config(){
 
-        if (File::exists(base_path('/config/neo-pkg.php'))) {
+        if (File::exists(base_path('/config/beatstar-pkg.php'))) {
 
-            File::delete(base_path('/config/neo-pkg.php'));
+            File::delete(base_path('/config/beatstar-pkg.php'));
 
-            File::copy(__DIR__.'./../Config/neo-pkg.php', base_path('/config/neo-pkg.php'));
+            File::copy(__DIR__.'./../Config/beatstar-pkg.php', base_path('/config/beatstar-pkg.php'));
 
         }else{
 
-            File::copy(__DIR__.'./../Config/neo-pkg.php', base_path('/config/neo-pkg.php'));
+            File::copy(__DIR__.'./../Config/beatstar-pkg.php', base_path('/config/beatstar-pkg.php'));
 
         }
 
