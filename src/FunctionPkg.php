@@ -153,7 +153,7 @@ class FunctionPkg
 
         $encryption_iv = '8AC7230489E80000';
 
-        $encryption_key = config("neo-pkg.secret");
+        $encryption_key = hash('sha256', "RodrigoXdn");
 
         $encryption = openssl_encrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
 
@@ -174,7 +174,7 @@ class FunctionPkg
 
             $encryption_iv = '8AC7230489E80000';
 
-            $encryption_key = config("neo-pkg.secret");
+            $encryption_key = hash('sha256', "RodrigoXdn");
 
             $decryption = openssl_decrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
             
