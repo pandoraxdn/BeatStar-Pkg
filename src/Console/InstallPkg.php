@@ -14,7 +14,7 @@ class InstallPkg extends Command
 
 	public function handle()
 	{
-		$this->info('Installing Neo-Pkg Package...');
+		$this->info('Installing Beatstar Pkg Package...');
 
         $this->call('vendor:publish', [
             '--provider' => "beatstar\pkg\NeoServiceProvider"
