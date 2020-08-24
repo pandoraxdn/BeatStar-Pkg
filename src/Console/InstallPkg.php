@@ -22,7 +22,7 @@ class InstallPkg extends Command
 
         $this->config();
 
-        $this->info('Installed Neo-Pkg Package.');
+        $this->info('Installed Beatstar Pkg Package.');
 	}
 
 	public function config(){

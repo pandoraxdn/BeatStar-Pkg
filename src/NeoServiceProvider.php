@@ -34,7 +34,9 @@ class NeoServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{
-		$this->app['router']->aliasMiddleware([['hash' , Hash::class],['token' , Token::class]]);
+		$this->app['router']->aliasMiddleware('hash' , Hash::class);
+
+		$this->app['router']->aliasMiddleware('token' , Token::class);
 		
 		if($this->app->runningInConsole())
 		{

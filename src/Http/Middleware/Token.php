@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Http\Middleware;
+namespace beatstar\pkg\Http\Middleware;
 
 use Closure;
 
@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Auth;
 
 use beatstar\pkg\Fecades\FunctionPkg;
 
-class Hash
+class Token
 {
 
     public function handle($request, Closure $next)
     {	
     	
-    	if (Auth::check()) {
+    	if (Auth::check() || Session::get('encuestado')) {
 
     		$token =  Session::get('token');
 

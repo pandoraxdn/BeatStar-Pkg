@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\Pkg\Http\Middleware;
+namespace beatstar\pkg\Http\Middleware;
 
 use Closure;
 
