@@ -12,17 +12,17 @@ class WriteKey extends Command
 {
 	protected $signature = 'pkg:key';
 
-	protected $description = 'Neo Pkg Key';
+	protected $description = 'Beatstar Pkg Key';
 
 	public function handle()
 	{
-		$this->info('Writing Neo-Pkg Key...');
+		$this->info('Writing Beatstar Pkg...');
 
 		$key = hash('sha512',rand(1000,100000));
 
 		if (File::exists(app()->environmentFilePath())) {
 
-			$this->setEnvironmentValue('Neo_Pkg_Key',$key);
+			$this->setEnvironmentValue('Beatstar_Pkg_Key',$key);
 
         	$this->info("Your key: [".$key."]");
 

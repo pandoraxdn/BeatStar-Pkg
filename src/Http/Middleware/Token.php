@@ -48,8 +48,6 @@ class Token
 
                     }else
                     {
-                        Session::forget();
-
         				Auth::logout();
 
         				Session::flush();
@@ -59,24 +57,20 @@ class Token
 
     			}else{
 
-    				Session::forget();
+    				Auth::logout();
 
-        			Auth::logout();
+                    Session::flush();
 
-        			Session::flush();
-
-        			return redirect('/');
+                    return redirect('/');
     			}
 
     		}else{
 
-    			Session::forget();
+    			Auth::logout();
 
-        		Auth::logout();
+                Session::flush();
 
-        		Session::flush();
-
-        		return redirect('/');
+                return redirect('/');
 
     		}
 
