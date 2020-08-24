@@ -22,6 +22,10 @@ use beatstar\pkg\GeneratorPkg;
 
 use beatstar\pkg\ParserPkg;
 
+use Illuminate\Support\Facades\Crypt;
+
+use Illuminate\Contracts\Encryption\DecryptException;
+
 use DateTime;
 
 class FunctionPkg
@@ -64,7 +68,8 @@ class FunctionPkg
         return $object;
     }
 
-    public function encrypt(string $value){
+    public function encrypt(string $value)
+    {
 
         $ciphering = "AES-256-CBC"; 
 
@@ -76,7 +81,9 @@ class FunctionPkg
 
         $encryption_key = config("neo-pkg.secret");
 
-        $encryption = openssl_encrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
+        $open_ssl = openssl_encrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
+
+        $encryption = Crypt::encrypt($open_ssl);
 
         return $encryption;
 
@@ -85,27 +92,54 @@ class FunctionPkg
     public function decrypt(string $value)
     {
 
-        try {
+        $valor = $this->validate_decrypt($value);
 
-            $ciphering = "AES-256-CBC";  
+        if ($valor != null) {
 
-            $iv_length = openssl_cipher_iv_length($ciphering);
+            try {
 
-            $options = 0;
+                $ciphering = "AES-256-CBC";  
 
-            $encryption_iv = '8AC7230489E80000';
+                $iv_length = openssl_cipher_iv_length($ciphering);
 
-            $encryption_key = config("neo-pkg.secret");
+                $options = 0;
 
-            $decryption = openssl_decrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
+                $encryption_iv = '8AC7230489E80000';
+
+                $encryption_key = config("neo-pkg.secret");
+
+                $decryption = openssl_decrypt($valor, $ciphering, $encryption_key, $options, $encryption_iv);
             
-        } catch (Exception $e) {
+            } catch (Exception $e) {
 
-            $decryption = null;
+                $decryption = null;
+            }
+            
+        }else{
+
+            $decryption = $valor;
+
         }
 
         return $decryption;
 
+    }
+
+    public function validate_decrypt(string $value)
+    {
+        try {
+
+            $string = Crypt::decrypt($value);
+
+            return $string;
+            
+        } catch (DecryptException $e) {
+
+            $string = null;
+
+            return $string;
+            
+        }
     }
 
     public function generate_token(array $claims = []): string

@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware('token')->group(function() {
-
-	Route::middleware('hash')->group(function() {
+Route::middleware('hash')->group(function() {
 
 		Route::get('validate/{param}/{date}', function () { 
 			//
@@ -43,6 +41,13 @@ Route::middleware('token')->group(function() {
 
     		// Route::get("edit-artista/{date}/{id}","ArtistaController@edit")->name("edit-artista");
 
+
+			Route::group(['middleware' => ['token']], function () {
+
+				// Solo ingresar rutas que se encuentren llamado dentro de una sesión.
+
+			});
+
     
 		}); // End of prefix getter
 
@@ -56,8 +61,12 @@ Route::middleware('token')->group(function() {
 
         	// Route::post("update-artista/{date}/{id}","ArtistaController@update")->name("update-artista");
 
+        	Route::group(['middleware' => ['token']], function () {
+
+				// Solo ingresar rutas que se encuentren llamado dentro de una sesión.
+				
+			});
+
 		}); // End of prefix setter
 
-	}); // End of middleware hash
-
-}); // End of middleware token
+}); // End of middleware hash
