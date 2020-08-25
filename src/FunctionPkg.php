@@ -79,7 +79,7 @@ class FunctionPkg
 
         $encryption_iv = '8AC7230489E80000';
 
-        $encryption_key = config("beatstar-pkg.secret");
+        $encryption_key = config("beatstar.secret");
 
         $open_ssl = openssl_encrypt($value, $ciphering, $encryption_key, $options, $encryption_iv);
 
@@ -106,7 +106,7 @@ class FunctionPkg
 
                 $encryption_iv = '8AC7230489E80000';
 
-                $encryption_key = config("beatstar-pkg.secret");
+                $encryption_key = config("beatstar.secret");
 
                 $decryption = openssl_decrypt($valor, $ciphering, $encryption_key, $options, $encryption_iv);
             
@@ -189,7 +189,7 @@ class FunctionPkg
 
     public function generate_token(array $claims = []): string
     {
-        $signer = new HS384(config("beatstar-pkg.secret"));
+        $signer = new HS384(config("beatstar.secret"));
 
         $generator = new GeneratorPkg($signer);
 
@@ -202,7 +202,7 @@ class FunctionPkg
     {
         try {
 
-            $signer = new HS384(config("beatstar-pkg.secret"));
+            $signer = new HS384(config("beatstar.secret"));
 
             $parser = new ParserPkg($signer);
 
